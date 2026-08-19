@@ -16,7 +16,7 @@ Date:   Wed Aug 19 22:39:30 2026 +0700
     test: first signed commit
 
 ### GitHub verification
-- Direct link to your most recent commit on GitHub: https://github.com/nptkenny12/devsecops-lab/commit/22e8b92d833b3e5824fb590603ff61726638e19a
+- Direct link to your most recent commit on GitHub: https://github.com/nptkenny12/devsecops-lab/commit/343e22170afc20a7ee384ce9ab5ccc7d380bbd1f
 - Screenshot of the Verified badge: 
 ### Evidence
 
@@ -43,12 +43,15 @@ repos:
       - id: detect-private-key
       - id: check-added-large-files
 ```
-### `.pre-commit `install output
+### `pre-commit install` output
 
+```text
 pre-commit installed at .git/hooks/pre-commit
+```
 
 ### The blocked commit
 
+```text
 [WARNING] Unstaged files detected.
 [INFO] Stashing unstaged files to /Users/tien.p.nguyen/.cache/pre-commit/patch1787155975-36508.
 Detect hardcoded secrets.................................................Failed
@@ -71,6 +74,7 @@ Fingerprint: submissions/leak-attempt.txt:github-pat:2
 11:12PM INF 0 commits scanned.
 11:12PM INF scanned ~91 bytes (91 bytes) in 18.9ms
 11:12PM WRN leaks found: 1
+```
 
 - [x] Task 1 — SSH signing configured + Verified badge on commit
 - [x] Task 2 — .pre-commit-config.yaml + gitleaks demonstrably blocking
